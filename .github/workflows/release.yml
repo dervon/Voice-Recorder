@@ -1,7 +1,11 @@
-name: Build
+name: Release
 
 on:
   push:
+    paths:
+      - 'include/version.mk'
+      - '.github/workflows/**'
+    branches: [ "main" ]
 
 jobs:
   build:
